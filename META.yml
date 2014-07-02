@@ -1,14 +1,28 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Proc-Pidfile
-version:      1.005
-version_from: Pidfile.pm
-installdirs:  site
+---
+abstract: 'a simple OO Perl module for maintaining a process id file for the curent process'
+author:
+  - 'Ave Wrigley <awrigley@cpan.org>'
+build_requires:
+  Test::More: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '6.30'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Proc-Pidfile
 requires:
-    Fcntl:                         0
-    File::Basename:                0
-    File::Spec:                    0
-    Proc::ProcessTable:            0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  Carp: '0'
+  Fcntl: '0'
+  File::Basename: '0'
+  File::Spec: '0'
+  Proc::ProcessTable: '0'
+  perl: '5.006'
+  strict: '0'
+  warnings: '0'
+resources:
+  homepage: https://github.com/neilbowers/Proc-Pidfile
+  repository: https://github.com/neilbowers/Proc-Pidfile.git
+version: '1.01'
