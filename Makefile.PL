@@ -24,14 +24,13 @@ my %WriteMakefileArgs = (
     "Fcntl" => 0,
     "File::Basename" => 0,
     "File::Spec" => 0,
-    "Proc::ProcessTable" => 0,
     "strict" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
     "Test::More" => 0
   },
-  "VERSION" => "1.01",
+  "VERSION" => "1.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -43,7 +42,6 @@ my %FallbackPrereqs = (
   "Fcntl" => 0,
   "File::Basename" => 0,
   "File::Spec" => 0,
-  "Proc::ProcessTable" => 0,
   "Test::More" => 0,
   "strict" => 0,
   "warnings" => 0
@@ -58,6 +56,10 @@ unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
 
 delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
   unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+if ( $^O eq 'riscos' ) {
+	$WriteMakefileArgs{PREREQ_PM}{'Proc::ProcessTable'} = '0.49';
+}
 
 WriteMakefile(%WriteMakefileArgs);
 

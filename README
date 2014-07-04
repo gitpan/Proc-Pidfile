@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Proc-Pidfile,
-version 1.01:
+version 1.02:
 
   a simple OO Perl module for maintaining a process id file for the curent process
 

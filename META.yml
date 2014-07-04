@@ -6,7 +6,7 @@ build_requires:
   Test::More: '0'
 configure_requires:
   ExtUtils::MakeMaker: '6.30'
-dynamic_config: 0
+dynamic_config: 1
 generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
@@ -18,11 +18,10 @@ requires:
   Fcntl: '0'
   File::Basename: '0'
   File::Spec: '0'
-  Proc::ProcessTable: '0'
   perl: '5.006'
   strict: '0'
   warnings: '0'
 resources:
   homepage: https://github.com/neilbowers/Proc-Pidfile
   repository: https://github.com/neilbowers/Proc-Pidfile.git
-version: '1.01'
+version: '1.02'
