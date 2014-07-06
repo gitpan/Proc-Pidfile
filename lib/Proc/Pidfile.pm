@@ -1,5 +1,5 @@
 package Proc::Pidfile;
-$Proc::Pidfile::VERSION = '1.04';
+$Proc::Pidfile::VERSION = '1.05';
 use 5.006;
 use strict;
 use warnings;
