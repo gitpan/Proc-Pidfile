@@ -24,4 +24,4 @@ requires:
 resources:
   homepage: https://github.com/neilbowers/Proc-Pidfile
   repository: https://github.com/neilbowers/Proc-Pidfile.git
-version: '1.05'
+version: '1.06'
